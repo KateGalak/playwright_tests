@@ -34,6 +34,7 @@ test('cart page', async ({ page }) => {
 });
 
 
+
 test('add a few product & remove', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
   await page.fill('[data-test="username"]', 'standard_user');
@@ -45,3 +46,4 @@ test('add a few product & remove', async ({ page }) => {
   await page.click('[data-test="remove-sauce-labs-bolt-t-shirt"]');
   await expect(page.locator('a').filter({ hasText: '2' })).toBeVisible();
 });
+
