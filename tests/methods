@@ -1,0 +1,15 @@
+/* await - якщо не виконається стрічка з await то наступна частина коду не запуститься (чекає доки не повенеться promice з статусом resolved)
+    EX: await page.goto('https://www.saucedemo.com/');
+
+pressSequentially() - схоже на fill(), тобто ввечення даних
+
+пошук в браузері inspact  */
+//input - на всіх рівнях вкладеності дом-структури знайти елемент input
+//input[@autocompleate='email'] які атрибути повинні бути в елементу 
+//button[contains(@class, 'default-ui-button')] - знайди всі елементи у яких в класі є 'default-ui-button'
+//button[contains(text(),'Skip')] - знайди всі елементи у яких в є текст 'Skip'
+
+/* 
+перевірка на елемент 
+треба зберегти його в змінну 
+let skipButton = await page.locator("xpath=//button[contains(text(),'Skip')]") */

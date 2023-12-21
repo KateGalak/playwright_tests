@@ -33,8 +33,6 @@ test('cart page', async ({ page }) => {
   expect(page.url()).toBe('https://www.saucedemo.com/cart.html');
 });
 
-
-
 test('add a few product & remove', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
   await page.fill('[data-test="username"]', 'standard_user');
